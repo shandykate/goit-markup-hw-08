@@ -1,0 +1,232 @@
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 15px;
+  text-decoration: none;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: $dark-bg-color;
+
+  @media screen and (min-width: 768px) {
+    padding: 60px 80px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+   align-items: baseline;
+    justify-content: center;
+    padding: 60px 0;
+    flex-wrap: nowrap;
+  }
+}
+
+.footer__flex {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    align-items: inherit;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-right: 94px;
+    align-items: inherit;
+  }
+}
+
+.logo__flex {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 768px) and (min-width: 1200px) {
+    margin-right: 69px;
+  }
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.footer__span {
+  color: $white-color;
+}
+
+.footer__contacts {
+  display: block;
+  margin-bottom: 60px;
+  text-align: center;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.footer__adress {
+  color: $white-color;
+}
+
+.footer__link {
+  display: inline-block;
+  margin-top: 9px;
+  font-style: normal;
+  color: $primary-text-color;
+}
+
+.footer__join {
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    align-items: baseline;
+  }
+}
+
+.footer__heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.social__icon {
+  fill: $white-color;
+}
+
+.footer__social {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__social:hover,
+.footer__social:focus {
+  background-color: $accent-color;
+}
+
+.footer__social:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* FOOTER FORM */
+.footer__subscribe {
+  display: block;
+}
+
+.footer__form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.footer__heading {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+  text-align: left;
+  }
+}
+
+.footer__input {
+  height: 50px;
+  width: 100%;
+  padding: 15px 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: $white-color;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+}
+
+.footer__input::placeholder {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__button {
+  position: relative;
+  display: flex;
+  min-height: 50px;
+  min-width: 200px;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  border: none;
+  text-align: left;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  background-color: $accent-color;
+  cursor: pointer;
+}
+
+.footer__button::after {
+  position: absolute;
+  right: 32px;
+  display: inline-block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icon-send.svg");
+}
